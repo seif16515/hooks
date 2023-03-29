@@ -1,0 +1,42 @@
+export const movies = [
+    {
+      id: 1,
+      title: "django",
+      rating: 9,
+      description: "best film ever",
+      Date: "03/03/1998",
+      img: "/",
+    },
+    {
+      id: 2,
+      title: "fight club",
+      rating: 9,
+      description: "best film ever",
+      Date: "03/03/1998",
+      img: "/",
+    },
+    {
+      id: 3,
+      title: "se7en",
+      rating: 8,
+      description: "best film ever",
+      Date: "03/03/1998",
+      img: "/",
+    },
+    {
+      id: 4,
+      title: "interstellar",
+      rating: 9,
+      description: "best film ever",
+      Date: "03/03/1998",
+      img: "/",
+    },
+    {
+      id: 5,
+      title: "inception",
+      rating: 7,
+      description: "best film ever",
+      Date: "03/03/1998",
+      img: "/",
+    },
+  ];
