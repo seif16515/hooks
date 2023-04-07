@@ -2,6 +2,7 @@ import { useState } from "react";
 import CardList from "./components/cardList";
 import { movies } from "./data/movies";
 import Counter from "./components/counter";
+import { Link } from "react-router-dom";
  const HomePage = () => {
   const [productsList, setProductsList] = useState(movies);
   const [search, setSearch] = useState('')
@@ -55,7 +56,7 @@ import Counter from "./components/counter";
         onChange={handleChange}
       />
       <label>Date:</label>
-      <input type="text"
+      <input type="date"
         name="Date"
         onChange={handleChange}
       />
@@ -79,6 +80,7 @@ import Counter from "./components/counter";
       />
       <button onClick={() => addProduct(newProduct)}>Add Product</button>
       </div>
+      <button>click here</button>
     </div>
   );
 };

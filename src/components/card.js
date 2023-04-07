@@ -10,6 +10,8 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 import { Card , CardHeader , CardMedia , CardContent } from "@mui/material";
 import ShareIcon from "@mui/icons-material/Share";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
+import BasicCard from "./other";
+import { Link } from "react-router-dom";
 
 
 
@@ -34,7 +36,7 @@ export default function FilmCard({ item, deleteProduct }) {
       <CardHeader
         avatar={
           <Avatar>
-            { item.title.length > 1 ? item.title[0].toUpperCase() : null}
+            { item.title.length > 1 ? item.title[0].toUpperCase() : "new"}
           </Avatar>
         }
         action={
@@ -51,11 +53,6 @@ export default function FilmCard({ item, deleteProduct }) {
         image={item.img}
         alt='movie'
       />
-      <CardContent>
-        <Typography variant='body2' color='text.secondary'>
-          {item.description}
-        </Typography>
-      </CardContent>
       <CardActions disableSpacing>
         <IconButton aria-label='add to favorites'
           onClick={() => deleteProduct(item.id)}
@@ -67,6 +64,9 @@ export default function FilmCard({ item, deleteProduct }) {
           <p style={{paddingLeft:"30px",fontFamily:"fantasy"}}>{item.rating}/10</p>
         </IconButton>
       </CardActions>
+      <Link to={`/view/${item.id}`}>
+        <button>View</button>
+      </Link>
     </Card>
     </div>
   );

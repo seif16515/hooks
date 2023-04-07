@@ -1,5 +1,6 @@
 
 import FilmCard from "./card";
+import BasicCard from "./other";
 
 const CardList = ({ data, deleteProduct,search }) => {
   const filteredData = data.filter((item) => {
@@ -11,7 +12,9 @@ const CardList = ({ data, deleteProduct,search }) => {
       {filteredData.map((item) => {
         return <div ><FilmCard key={item.id} item={item} 
           deleteProduct={deleteProduct}
-        /></div>
+        />
+       
+        </div>
       })}
     </div>
   );

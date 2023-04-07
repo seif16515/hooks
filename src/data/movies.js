@@ -6,6 +6,7 @@ export const movies = [
       description: "best film ever",
       Date: "03/03/1998",
       img: "/",
+      trailer: "/",
     },
     {
       id: 2,
@@ -22,6 +23,7 @@ export const movies = [
       description: "best film ever",
       Date: "03/03/1998",
       img: "/",
+      trailer: "/",
     },
     {
       id: 4,
@@ -30,6 +32,7 @@ export const movies = [
       description: "best film ever",
       Date: "03/03/1998",
       img: "/",
+      trailer: "/",
     },
     {
       id: 5,
@@ -38,5 +41,6 @@ export const movies = [
       description: "best film ever",
       Date: "03/03/1998",
       img: "/",
+      trailer: "/",
     },
   ];
