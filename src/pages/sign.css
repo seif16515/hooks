@@ -1,0 +1,228 @@
+.card1 {
+    width: 210px;
+    height: 450px;
+    border-radius: 10px;
+    background: #F4F6FB;
+    border: 1px solid white;
+   
+  }
+  
+  .form {
+    padding: 25px;
+  }
+  
+  .card_header {
+    display: flex;
+    align-items: center;
+  }
+  
+  .card svg {
+    color: #6f4e37;
+    margin-bottom: 20px;
+    margin-right: 5px;
+  }
+  
+  .form_heading {
+    padding-bottom: 20px;
+    font-size: 21px;
+    color: #6f4e37;
+  }
+  
+  .field {
+    padding-bottom: 10px;
+  }
+  
+  .input {
+    border-radius: 5px;
+    background-color: #e9e9f7;
+    padding: 5px;
+    width: 100%;
+    color: #6f4e37;
+    border: 1px solid #6f4e37
+  }
+  
+  .input:focus-visible {
+    outline: 1px solid #6f4e37;
+  }
+  
+  .input::placeholder {
+    color: #9f9f9f;
+  }
+  .checkbox {
+  width: 223px;
+  height: 60px;
+  background-color: #d0d0d0;
+  border-radius: 30px;
+  position: relative;
+  color: black;
+  overflow: hidden;
+}
+
+#checkbox_toggle {
+  display: none;
+}
+
+.checkbox .toggle {
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  border-radius: 30px;
+  left: 5px;
+  cursor: pointer;
+  background: linear-gradient(40deg, #FF0080,#FF8C00 70%);
+  transition: 0.4s;
+  box-shadow: 0px 0px 10px rgb(255, 255, 20), 0px 0px 30px rgb(255, 255, 20);
+}
+
+.checkbox .slide {
+  width: 230px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+.checkbox .slide .text {
+  font-size: 16px;
+  font-weight: 700;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.check:checked + .checkbox .slide .toggle {
+  transform: translateX(113px);
+  background: linear-gradient(40deg, #8983F7, #A3DAFB 70%);
+  box-shadow: -0px -0px 10px #8983F7, -0px -0px 30px #8983F7;
+}
+
+.check:checked + .checkbox .slide {
+  background-color: #0a1929;
+  color: #fff;
+}
+  
+  label {
+    color: #6f4e37;
+    font-size: 14px;
+    display: block;
+    padding-bottom: 4px;
+  }
+  
+  button {
+    background-color: #6f4e37;
+    margin-top: 10px;
+    font-size: 14px;
+    padding: 7px 12px;
+    height: auto;
+    font-weight: 500;
+    color: white;
+    border: none;
+  }
+  
+  button:hover {
+    background-color: #6f4e37;
+  }
+  .fancy {
+ background-color: transparent;
+ border: 2px solid #6f4e37;
+ border-radius: 0;
+ box-sizing: border-box;
+ color: #fff;
+ cursor: pointer;
+ display: inline-block;
+ 
+ font-weight: 700;
+ letter-spacing: 0.05em;
+ margin: 0;
+ outline: none;
+ overflow: visible;
+ padding: 1.25em 2em;
+ position: relative;
+ text-align: center;
+ text-decoration: none;
+ text-transform: none;
+ transition: all 0.3s ease-in-out;
+ user-select: none;
+ font-size: 13px;
+}
+
+.fancy::before {
+ content: " ";
+ width: 1.5625rem;
+ height: 2px;
+ background: white;
+ top: 50%;
+ left: 1.5em;
+ position: absolute;
+ transform: translateY(-50%);
+ transform-origin: center;
+ transition: background 0.3s linear, width 0.3s linear;
+}
+
+.fancy .text {
+ font-size: 1.125em;
+ line-height: 1.33333em;
+ padding-left: 2em;
+ display: block;
+ text-align: left;
+ transition: all 0.3s ease-in-out;
+ text-transform: uppercase;
+ text-decoration: none;
+ color: white;
+}
+
+.fancy .top-key {
+ height: 2px;
+ width: 1.5625rem;
+ top: -2px;
+ left: 0.625rem;
+ position: absolute;
+ background: #e8e8e8;
+ transition: width 0.5s ease-out, left 0.3s ease-out;
+}
+
+.fancy .bottom-key-1 {
+ height: 2px;
+ width: 1.5625rem;
+ right: 1.875rem;
+ bottom: -2px;
+ position: absolute;
+ background: #e8e8e8;
+ transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+
+.fancy .bottom-key-2 {
+ height: 2px;
+ width: 0.625rem;
+ right: 0.625rem;
+ bottom: -2px;
+ position: absolute;
+ background: #e8e8e8;
+ transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+
+.fancy:hover {
+ color: white;
+ background: #6f4e37;
+}
+
+.fancy:hover::before {
+ width: 0.9375rem;
+ background: white;
+}
+
+.fancy:hover .text {
+ color: white;
+ padding-left: 1.5em;
+}
+
+.fancy:hover .top-key {
+ left: -2px;
+ width: 0px;
+}
+
+.fancy:hover .bottom-key-1,
+ .fancy:hover .bottom-key-2 {
+ right: 0;
+ width: 0;
+}

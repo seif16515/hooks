@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +11,43 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.main{
+  width: 100%;
+  height: 100vh;
+}
+
+.content{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+p{
+  color: azure;
+  text-decoration: none;
+}
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.5);
+}
+.title{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 70px;
+  color: beige;
+  font-family: Brush Script MT;
 }

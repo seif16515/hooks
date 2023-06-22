@@ -2,8 +2,8 @@ import React from 'react';
 import { useState } from 'react';
 
 
-export default function Counter() {
-    const [counter, setCounter] = useState(0);
+export default function Counter(props) {
+    const [counter, setCounter] = useState(props.counter);
   const increment = () => {
     if (counter < 10) {
         setCounter(counter + 1);
